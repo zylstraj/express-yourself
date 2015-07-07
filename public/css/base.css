@@ -25,7 +25,9 @@ li {
   border-style: solid;
   border-width: 0.1em;
   border-radius: 0.2em;
+  margin: 1em;
   display: inline-block;
+  clear:both;
 }
 .navbar ul {
   display: inline;
@@ -49,4 +51,7 @@ li {
 .my_books a:visited {
   color: black;
   text-decoration: none;
+}
+.kris_about {
+  clear: both;
 }
