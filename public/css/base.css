@@ -1,7 +1,4 @@
-h1 {
-  background-color: green;
-}
-h2 {
+#about_me {
   font-size: 2em;
   font-family: Helvetica;
   margin: 1em auto;
@@ -14,6 +11,7 @@ p {
   float: left;
   width: 50%;
   border: 1px solid black;
+  clear: both;
 }
 #buy_my_books {
   float: right;
@@ -41,6 +39,14 @@ li {
   float: left;
   margin: 1em;
 }
-h2 {
-  display: inline-flex;
+#about_page_reference {
+  text-align: left;
+  font-size: 3em;
+}
+.my_books a:hover {
+  font-color: orange;
+}
+.my_books a:visited {
+  color: black;
+  text-decoration: none;
 }
