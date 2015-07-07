@@ -2,6 +2,24 @@ h1 {
   background-color: green;
 }
 h2 {
-  background-color: blue;
-  font-size: 5em;
+  font-size: 2em;
+  font-family: Helvetica;
+  margin: 1em auto;
+}
+p {
+  background-color: white;
+  font-size: .8em;
+}
+#me_awesome {
+  float: left;
+  width: 50%;
+  border: 1px solid black;
+}
+#buy_my_books {
+  float: right;
+  width: 49%;
+}
+li {
+  letter-spacing: .1em;
+  margin-bottom: 1em;
 }

@@ -1,2 +1,21 @@
 link(rel='stylesheet', href='../css/base.css')
-h2 This is the different one
+doctype html
+html
+  include ./head.jade
+  body#child_me
+    h3 About Me
+    section#me_awesome
+      h2 Josh Zylstra
+        p This is the story of a boy who moved across the country. A Michigan child, who found his way to the mountains of Washington and the waters of Seattle. Some claim it was an accident, a mere coincidence that he found himself in the only place that would satisfy his desires for the outdoors...
+    section#buy_my_books
+      ul
+        h3 Buy My Best Selling Nature Books
+          li
+            a(href="") Water So Clear It Stares Into Your Soul
+          li
+            a(href="") Mountains Are More Beautiful Than Naked People
+          li
+            a(href="") The Desert: You Choose To Live Where, Why?
+          li
+            img(src="/Josh.jpg")
+      include ./footer.jade
