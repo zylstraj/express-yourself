@@ -1,2 +1,18 @@
+doctype html
 link(rel='stylesheet', href='../css/base.css')
-h2 This is the different one
+include ./head.jade
+include ./nav.jade
+h2 About Jade
+p
+  |this is practice using jade's includes and modular templating.
+  |maybe this piped block of text will work, too.
+
+ul the docs say Jade relies on spacing
+  li first level
+  li second level
+  ul|this invisible "ul" is inline with the "li's" for the previous levels
+    li|dang, these are huge indents!
+  li third level
+
+
+include ./footer.jade

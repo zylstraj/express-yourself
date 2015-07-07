@@ -5,3 +5,7 @@ h2 {
   background-color: blue;
   font-size: 5em;
 }
+#footer {
+  border-width: 0.2em;
+  border-radius: 0.3em;
+}
