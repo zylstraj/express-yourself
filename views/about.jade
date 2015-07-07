@@ -6,19 +6,20 @@ html
   include ./head.jade
   include ./nav.jade
   body#child_me
-    h3 About Me
+    h3#about_page_reference About Me
     section#me_awesome
-      h2 Josh Zylstra
+      h2#about_me Josh Zylstra
         p This is the story of a boy who moved across the country. A Michigan child, who found his way to the mountains of Washington and the waters of Seattle. Some claim it was an accident, a mere coincidence that he found himself in the only place that would satisfy his desires for the outdoors...
     section#buy_my_books
       ul
         h3 Buy My Best Selling Nature Books
-          li
+          li.my_books
             a(href="") Water So Clear It Stares Into Your Soul
-          li
+          li.my_books
             a(href="") Mountains Are More Beautiful Than Naked People
-          li
+          li.my_books
             a(href="") The Desert: You Choose To Live Where, Why?
+
           li
             <img src="./Josh.jpg" >
     section        
