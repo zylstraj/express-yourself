@@ -1,8 +1,10 @@
 doctype html
-link(rel='stylesheet', href='../css/base.css')
-include ./head.jade
-include ./nav.jade
-  h1 Learning How To Use Jade
+html  
+  link(rel='stylesheet', href='../css/base.css')
+  include ./head.jade
+  body
+      include ./nav.jade
 
-  iframe(width="560" height="315" src="https://www.youtube.com/embed/0_qNFjJn3No" frameborder="0" allowfullscreen)
+      h1 Learning How To Use Jade
+      iframe(width="560" height="315" src="https://www.youtube.com/embed/0_qNFjJn3No" frameborder="0" allowfullscreen)
     include ./footer.jade
