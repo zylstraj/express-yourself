@@ -1,32 +1,33 @@
+
+/* Base Level Fonts */
+p {
+  font-size: .8em;
+}
+li {
+  letter-spacing: .1em;
+  margin-bottom: 1em;
+}
+
+/* About Josh Code */
+
 #about_me {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: Helvetica;
   margin: 1em auto;
-}
-p {
-  background-color: white;
-  font-size: .8em;
 }
 #me_awesome {
   float: left;
   width: 50%;
-  border: 1px solid black;
   clear: both;
 }
 #buy_my_books {
   float: right;
   width: 49%;
 }
-li {
-  letter-spacing: .1em;
-  margin-bottom: 1em;
-}
-#footer {
-  border-style: solid;
-  border-width: 0.1em;
-  border-radius: 0.2em;
-  display: inline-block;
-}
+/* About Kris Code */
+
+/* Nav Jade Bar Code */
+
 .navbar ul {
   display: inline;
   list-style: none;
@@ -49,4 +50,18 @@ li {
 .my_books a:visited {
   color: black;
   text-decoration: none;
+}
+#kris_awesome {
+  clear: both;
+}
+body {
+  background-color: #ADD8E6;
+}
+
+/* Footer Styling   */
+#footer {
+  border-style: solid;
+  border-width: 0.1em;
+  border-radius: 0.2em;
+  display: inline-block;
 }
