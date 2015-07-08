@@ -1,0 +1,15 @@
+{
+  "name": "express-node-demo",
+  "version": "0.1.0",
+  "description": "An app for bullshitting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ME, Mario",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1",
+    "jade": "^1.11.0"
+  }
+}
