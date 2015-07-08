@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 app.get('/', function(req, res){
   res.render('index');
 });
-app.get('/', function(req, res) {
+app.put('/', function(req, res) {
   res.send("Hey Hey Hey, Cubs Win!");
 });
 app.post('/', function (req, res) {
@@ -26,7 +26,7 @@ app.post('/', function (req, res) {
 app.get('/about', function(req, res){
   res.render('about');
 });
-app.get('/users', function(req, res) {
+app.post('/users', function(req, res) {
   var users = ['Bob', 'Larry', 'Joe'];
   res.json(users);
   console.log()
@@ -44,6 +44,9 @@ app.get('/head', function(req, res){
 app.get('/nav', function(req, res){
   res.render('nav');
 });
+app.put('/nav', function(req, res){
+  res.send('<li>')
+})
 app.post('/users', function(req, res) {
   res.send('You hit post');
 });
@@ -65,8 +68,8 @@ app.post('/', function (req, res) {
 // });
 
 // accept DELETE request at /user
-// app.delete('/user', function (req, res) {
-//   res.send('Got a DELETE request at /user');
+// app.delete('/users', function (req, res) {
+//  res.send('Got a DELETE request at /user');
 // });,
 
 //static services
