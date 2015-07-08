@@ -26,7 +26,9 @@ app.get('/head', function(req, res){
 app.get('/nav', function(req, res){
   res.render('nav');
 });
-
+app.get('/users', function(req, res){
+  res.render('users');
+});
 //REST handlers:
 // respond with "Hello World!" on the homepage
 app.get('/', function (req, res) {
@@ -39,14 +41,14 @@ app.post('/', function (req, res) {
 });
 
 // accept PUT request at /user
-// app.put('/user', function (req, res) {
-//   res.send('Got a PUT request at /user');
-// });
+app.put('/users', function (req, res) {
+  res.send('Got a PUT request at /users');
+});
 
 // accept DELETE request at /user
-// app.delete('/user', function (req, res) {
-//   res.send('Got a DELETE request at /user');
-// });,
+app.delete('/users', function (req, res) {
+  res.send('Got a DELETE request at /users');
+});
 
 //static services
 app.use(express.static(path.join(__dirname, 'public')));
