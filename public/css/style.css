@@ -1,5 +1,11 @@
 body {
-  background-color: blue;
-  line-height: 10; }
+  background-color: #87cefa;
+  text-align: center; }
+
+h1 {
+  color: #32CD32; }
+
+div {
+  color: blue; }
 
 /*# sourceMappingURL=style.css.map */
