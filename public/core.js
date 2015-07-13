@@ -9,7 +9,7 @@ line 5 - empty form/object we put our form data into: this is obviously tied to 
 */
 
     // when landing on the page, get all todos and show them
-    $http.get('/todos')
+    $http.get('/app/todos')
         .success(function(data) {
             $scope.todos = data;
             console.log(data);
@@ -20,7 +20,7 @@ line 5 - empty form/object we put our form data into: this is obviously tied to 
 
     // when submitting the add form, send the text to the node API
     $scope.createTodo = function() {
-        $http.post('/todos', $scope.formData)
+        $http.post('/app/todos', $scope.formData)
             .success(function(data) {
                 $scope.formData = {}; // clear the form so our user is ready to enter another
                 $scope.todos = data;
@@ -33,7 +33,7 @@ line 5 - empty form/object we put our form data into: this is obviously tied to 
 
     // delete a todo after checking it
     $scope.deleteTodo = function(id) {
-        $http.delete('/todos/' + id)
+        $http.delete('/app/todos/' + id)
             .success(function(data) {
                 $scope.todos = data;
                 console.log(data);
